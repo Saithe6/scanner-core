@@ -2,7 +2,8 @@ local tArgs = {...}
 local scanner = {}
 
 ---use a scanlist.lua file to define a list of block ids to scan for
-scanner.scanlist = require("scanlist")
+local ok,result = pcall(require,"scanlist")
+scanner.scanlist = ok and result or {}
 
 ---the range to scan within
 ---@type 0|1|2|3|4|5|6|7|8|9|10|11|12|13|14|15|16
