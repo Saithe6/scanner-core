@@ -1,8 +1,8 @@
 local tArgs = {...}
 local scanner = {}
 
----use a scanlist.lua file in /libs to define a list of block ids to scan for
-scanner.scanlist = require("libs/scanlist")
+---use a scanlist.lua file to define a list of block ids to scan for
+scanner.scanlist = require("scanlist")
 
 ---the range to scan within
 ---@type 0|1|2|3|4|5|6|7|8|9|10|11|12|13|14|15|16
